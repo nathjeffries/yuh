@@ -3,32 +3,16 @@ package org.WalkerCC_CompSci;
 public class Main {
 
     public static void main(String[] args) {
-        Rectangle rectangle1 = new Rectangle(2, 4);
-        Square square1 = new Square(3);
 
-        //length of 2
-        //width of 4
-        System.out.println("The length of rectangle1 is:  " + rectangle1.getLength());
-        System.out.println("The width of rectangle1 is:  " + rectangle1.getWidth());
+        Point rectangleStartingPoint = new Point(2,3);
+        Rectangle rectangle1 = new Rectangle(rectangleStartingPoint, 4, 5);
+        Point squareStartingPoint = new Point(4,4);
+        Square square1 = new Square(squareStartingPoint, 5);
 
-        //sidelength of 3
-        System.out.println("The Side Length of square1 is:  " + square1.getSideLength());
-
-        //area of 8
-        System.out.println("The area of rectangle1 is: " + rectangle1.Area());
-
-
-        square1.setSideLength(4);
-
-        //sideLength of 4
-        //Area of 16;
-        System.out.println("The Side Length of square1 is:  " + square1.getSideLength());
-        System.out.println("The area of square1 is: " + square1.Area());
-
-
+        System.out.println("Rectangle1's perimeter is " + rectangle1.GetPerimeter());
+        System.out.println("Square1's perimeter is " + square1.GetPerimeter());
 
 
     }
 }
-
 
